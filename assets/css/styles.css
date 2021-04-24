@@ -696,3 +696,13 @@ hr.hr-left{
 .taller-text{
 	line-height: 1.7em;
 }
+.animate {
+	transition: all 0.61s ease;
+}
+.bg-light_but_dark{
+	background-color: #efefef ;
+	padding: 4em 3em;
+}
+.cdes{
+	font-weight: 400;
+}
