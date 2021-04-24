@@ -640,11 +640,45 @@ div.carousel-caption h2.i{
 	display: flex;
 	text-align: left;
 	color: lightgreen;
-
 	opacity: 0;
 }
 div.title-box{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+}
+.cave_green{
+	color: lightgreen;
+}
+.card-img {
+	width: 100%;
+	object-fit: cover;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+}
+.picard{
+	margin: 0 5%;
+}
+
+
+.btn-theme-bare {
+	background-color: #ffffff;
+	color: #69c5d3;
+	letter-spacing: 1.4px;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1.7em;
+	text-transform: uppercase;
+
+
+}
+.btn-theme-bare:hover {
+	background-color: #ffffff;
+	color: #69c5d3;
+
+}
+.btn-theme-bare:focus {
+	box-shadow: none;
 }
