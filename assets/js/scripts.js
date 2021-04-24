@@ -1,7 +1,9 @@
 
 
+
 function render_hero() {
 		console.log('documentready');
+
 		anime({
 			targets: 'div.carousel-caption h2.n',
 			translateX: -20,
@@ -49,3 +51,21 @@ function render_hero() {
 
 $(document).ready(render_hero());
 
+console.log('oof')
+$(document).scroll(function () {
+	// console.log('scrollingu')
+	var y = window.pageYOffset
+	// console.log(y)
+	if (y > 350) {
+
+	// console.log('too farr')
+	$("nav.navbar.fixed-top").removeClass( "navbar-dark" )
+	$("nav.navbar.fixed-top").addClass( "navbar-light" )
+}
+	if (y < 350) {
+
+	// console.log('too near')
+	$("nav.navbar.fixed-top").removeClass( "navbar-light" )
+	$("nav.navbar.fixed-top").addClass( "navbar-dark" )
+}
+})
