@@ -1,10 +1,27 @@
+/* fonts  */
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
 }
+@font-face {
+	font-family: 'Montserrat_reg';
+	src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+	font-family: 'Opensans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
 .montser {
 	font-family: 'Montserrat';
 }
+.montser_reg {
+	font-family: 'Montserrat_reg';
+}
+.osans {
+	font-family: 'Opensans';
+}
+
+/* common shit  */
 
 .carousel {
 	position: relative;
@@ -13,6 +30,12 @@
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
+}
+img.carousel-image {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .carousel-inner {
 	position: relative;
@@ -34,7 +57,20 @@
 	backface-visibility: hidden;
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
+
+
+
 }
+.carousel-item img.carousel-image{
+	/* height: 100%;  */
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
 
 .carousel-item.active,
 .carousel-item-next,
@@ -190,17 +226,62 @@
 	color: #fff;
 	text-align: center;
 }
-/* fonts  */
 
-@font-face {
+.navbar-brand.montser {
 	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
-}
-.montser {
-	font-family: 'Montserrat';
+	font-size: 2em;
 }
 
-@media screen and (max-width: 680px) {
+
+
+
+.btn-theme {
+	background-color: #69c5d3;
+	color: white;
+	letter-spacing: 1.4px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.7em;
+	padding: 12px 37px;
+	border-radius: 45px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in;
+
+}
+.btn-theme:hover {
+	background-color: #212121;
+	color: white;
+
+}
+.btn-theme:focus {
+	box-shadow: none;
+}
+
+
+
+.carousel-item a.btn-theme{
+	margin-right: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 	.carousel-image {
 		object-fit: cover;
 		height: 100vh;
@@ -211,7 +292,7 @@
 	.carousel-caption {
 		position: absolute;
 		right: 15%;
-		bottom: 10vh;
+		bottom: 25vh;
 		left: 15%;
 		z-index: 10;
 		color: #fff;
@@ -222,6 +303,10 @@
 	}
 	.caption-desc {
 		font-size: smaller;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: none;
 	}
 	nav.navbar.navbar-dark.fixed-top {
 		background-color: rgb(255, 255, 255) !important;
@@ -239,14 +324,13 @@
 	}
 
 	nav.navbar-dark a.navbar-brand {
+		display: inline;
 		color: rgb(0, 0, 0);
-		padding-left: 15rem;
-		margin-right: 0rem;
+		margin-right: 30vw;
+		margin-left: 20vw;
 	}
 	nav.navbar-dark a.navbar-brand:hover {
 		color: rgb(0, 0, 0);
-		padding-left: 15rem;
-		margin-right: 0rem;
 	}
 
 	.navbar-dark.navbar-toggler {
@@ -255,13 +339,290 @@
 	}
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 
 
+	.carousel-image {
+		object-fit: cover;
+		height: 100vh;
+		max-width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		right: 15%;
+		bottom: 20vh;
+		left: 15%;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+	}
+	.caption-title {
+		font-size: 3.9em;
+	}
+	.caption-desc {
+		font-size: 1.1em;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: none;
+	}
+	nav.navbar.navbar-dark.fixed-top {
+		background-color: rgb(255, 255, 255) !important;
+		color: black;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	nav.navbar-dark span.bograr.icon_menu {
+		color: white;
+	}
+	.navbar-dark .navbar-toggler {
+		color: rgb(0, 0, 0);
+		border-color: rgba(255, 255, 255, 0);
+	}
+
+	nav.navbar-dark a.navbar-brand {
+		display: inline;
+		color: rgb(0, 0, 0);
+		margin-right: 30vw;
+		margin-left: 20vw;
+	}
+	nav.navbar-dark a.navbar-brand:hover {
+		color: rgb(0, 0, 0);
+	}
+
+	.navbar-dark.navbar-toggler {
+		border: none;
+		color: black;
+	}
+
+
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+	.carousel-image {
+		object-fit: cover;
+		height: 100vh;
+		max-width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		right: 15%;
+		bottom: 22vh;
+		left: 15%;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+	}
+	.caption-title {
+		font-size: 4.3em;
+	}
+	.caption-desc {
+		font-size: 1.3em;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: flex;
+	}
+	nav.navbar.navbar-dark.fixed-top {
+		background-color: rgba(26, 26, 26, 0) !important;
+		color: black;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	nav.navbar-dark span.bograr.icon_menu {
+		color: white;
+	}
+	.navbar-dark .navbar-toggler {
+		color: rgb(255, 255, 255);
+		border-color: rgba(255, 255, 255, 0);
+	}
+
+	nav.navbar-dark a.navbar-brand {
+		display: inline;
+		color: rgb(255, 255, 255);
+		margin-right: 30vw;
+		margin-left: 5vw;
+	}
+	nav.navbar-dark a.navbar-brand:hover {
+		color: rgb(0, 0, 0);
+	}
+
+	.navbar-dark.navbar-toggler {
+		border: none;
+		color: black;
+	}
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+	.carousel-image {
+		object-fit: cover;
+		height: 100vh;
+		max-width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		right: 20%;
+		bottom: 22vh;
+		left: 20%;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+	}
+	.caption-title {
+		font-size: 5em;
+	}
+	.caption-desc {
+		font-size: 1.3em;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: flex;
+	}
+	nav.navbar.navbar-dark.fixed-top {
+		background-color: rgba(26, 26, 26, 0) !important;
+		color: black;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	nav.navbar-dark span.bograr.icon_menu {
+		color: white;
+	}
+	.navbar-dark .navbar-toggler {
+		color: rgb(255, 255, 255);
+		border-color: rgba(255, 255, 255, 0);
+	}
+
+	nav.navbar-dark a.navbar-brand {
+		display: inline;
+		color: rgb(255, 255, 255);
+		margin-right: 30vw;
+		margin-left: 1vw;
+	}
+	nav.navbar-dark a.navbar-brand:hover {
+		color: rgb(240, 240, 240);
+	}
+
+	.navbar-dark.navbar-toggler {
+		border: none;
+		color: black;
+	}
+
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+	
+	.carousel-image {
+		object-fit: cover;
+		height: 100vh;
+		max-width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		right: 22%;
+		bottom: 24vh;
+		left: 22%;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+	}
+	.caption-title {
+		font-size: 5.2em;
+	}
+	.caption-desc {
+		font-size: 1.3em;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: flex;
+	}
+	nav.navbar.navbar-dark.fixed-top {
+		background-color: rgba(26, 26, 26, 0) !important;
+		color: black;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	nav.navbar-dark span.bograr.icon_menu {
+		color: white;
+	}
+	.navbar-dark .navbar-toggler {
+		color: rgb(255, 255, 255);
+		border-color: rgba(255, 255, 255, 0);
+	}
+
+	nav.navbar-dark a.navbar-brand {
+		display: inline;
+		color: rgb(255, 255, 255);
+		margin-right: 30vw;
+		margin-left: 1vw;
+	}
+	nav.navbar-dark a.navbar-brand:hover {
+		color: rgb(240, 240, 240);
+	}
+
+	.navbar-dark.navbar-toggler {
+		border: none;
+		color: black;
+	}
+
+
+
+}
 
 /* Transitions  */
 nav.navbar.navbar-dark.fixed-top {
 	transition: all 0.61s ease;
 }
-div.carousel-caption {
-	transition: all 0.61s ease;
+div.carousel-caption a{
+	opacity: 0;
+}
+div.carousel-caption p{
+	display: flex;
+	text-align: left;
+	opacity: 0;
+}
+div.carousel-caption h2.n{
+	display: flex;
+	text-align: left;
+	opacity: 0;
+}
+div.carousel-caption h2.i{
+	display: flex;
+	text-align: left;
+	color: lightgreen;
+
+	opacity: 0;
+}
+div.title-box{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
