@@ -682,3 +682,17 @@ div.title-box{
 .btn-theme-bare:focus {
 	box-shadow: none;
 }
+hr.hr{
+	border-color: lightgreen;
+	border-width: 4px;
+	width: 10%;
+}
+hr.hr-left{
+	margin-right: 100%;
+}
+.spaced-text{
+	letter-spacing: 1.4px;
+}
+.taller-text{
+	line-height: 1.7em;
+}
