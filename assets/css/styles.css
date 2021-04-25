@@ -828,3 +828,48 @@ div.progressbars{
 	justify-content: center;
 	padding: 1rem 3rem ;
 }
+div.post-title {
+	margin: 1.2em 0em;
+}
+div.crumbs {
+	font-size: 0.72em;
+	margin: 1em 0em;
+}
+
+div.crumbs span.crumb-author {
+	padding-right: 0.5rem;
+	border-right: 3px solid lightgreen;
+}
+div.crumbs span.crumb-type {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	border-right: 3px solid lightgreen;
+}
+div.crumbs span.crumb-date {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+a.post-title-link {
+	color: black;
+	transition: all 0.2s ease;
+
+}
+a.post-title-link:hover {
+	color: lightgreen;
+	text-decoration: none;
+}
+.post-img {
+	width: 100%;
+	object-fit: cover;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	transition: all 0.25s ease;
+}
+.post-img:hover {
+	filter: brightness(108%);
+	filter: contrast(108%);
+
+
+}
