@@ -117,6 +117,7 @@ nav.navbar.navbar-dark.fixed-top {
 /* carousel */
 .carousel {
 	position: relative;
+	background-color: whitesmoke;
 }
 .carousel-inner {
 	position: relative;
