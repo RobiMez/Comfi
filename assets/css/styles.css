@@ -887,3 +887,11 @@ a.post-title-link:hover {
 	height: 100%;
 	overflow: hidden;
 }
+.cute_phone_pic {
+	max-width: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+
+}
