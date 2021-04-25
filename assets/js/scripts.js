@@ -55,17 +55,32 @@ console.log('oof')
 $(document).scroll(function () {
 	// console.log('scrollingu')
 	var y = window.pageYOffset
-	// console.log(y)
-	if (y > 350) {
+	var wid = window.innerWidth
+	console.log(wid)
+	if (y > 350 && wid>830) {
 
 	// console.log('too farr')
 	$("nav.navbar.fixed-top").removeClass( "navbar-dark" )
 	$("nav.navbar.fixed-top").addClass( "navbar-light" )
 }
-	if (y < 350) {
+	if (y < 350 ) {
 
 	// console.log('too near')
 	$("nav.navbar.fixed-top").removeClass( "navbar-light" )
 	$("nav.navbar.fixed-top").addClass( "navbar-dark" )
 }
+})
+
+
+// parallax 
+$(function(){
+	var $window = $(window)
+	$('div[data-type="background"]').each(function () {
+		var $bgobj = $(this);
+		$window.scroll(function(){
+			var ypos = -($window.scrollTop())/$bgobj.data('speed')
+			var coords = "50%" + ypos+"px"
+			$bgobj.css({backgroundPosition: coords})
+		})
+	})
 })
