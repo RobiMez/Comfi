@@ -116,6 +116,7 @@ nav.navbar.navbar-dark.fixed-top {
 
 /* carousel */
 .carousel {
+
 	position: relative;
 	background-color: whitesmoke;
 }
@@ -123,6 +124,7 @@ nav.navbar.navbar-dark.fixed-top {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	
 }
 .carousel-item {
 	position: relative;
@@ -150,28 +152,34 @@ nav.navbar.navbar-dark.fixed-top {
 	line-height: 1.4em;
 }
 /* carousel images */
-.carousel-image-1 {
+.carouselimg{
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 	background-size: cover;
 	background-position: center;
+}
+.carouselimg-80{
+	width: 100%;
+	height: 78vh;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+}
+.carouselimg-20{
+	width: 100%;
+	height: 20vh;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+}
+.image-1 {
 	background: url('../images/slide1.jpg') 50% 0 repeat fixed;
 }
-.carousel-image-2 {
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	background-size: cover;
-	background-position: center;
+.image-2 {
 	background: url('../images/slide2.jpg') 50% 0 repeat fixed;
 }
-.carousel-image-3 {
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	background-size: cover;
-	background-position: center;
+.image-3 {
 	background: url('../images/slide3.jpg') 50% 0 repeat fixed;
 }
 .carousel-item.active,
@@ -977,4 +985,22 @@ a.social-links:hover{
 	margin: 0 auto;
 	background-color: black;
 	color: whitesmoke;
+}
+
+.details-image a img {
+
+	overflow: hidden;
+	object-fit: cover;
+	max-height: 80vh;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
+}
+.similar-image a img {
+
+	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
 }

@@ -49,6 +49,7 @@ function render_hero() {
 $(document).ready(render_hero());
 
 console.log('oof');
+
 $(document).scroll(function() {
 	// console.log('scrollingu')
 	var y = window.pageYOffset;
@@ -65,7 +66,7 @@ $(document).scroll(function() {
 	}
 
 
-	if (wid < 630 || y < 3050) {//screen is mobile size 
+	if (wid < 630 || y < 350) {//screen is mobile size 
 		console.log('huh')
 		$('.icon-bar').css('display', 'none');
 	}else{

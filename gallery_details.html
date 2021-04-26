@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/fonts/Eleganticons/style.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core CSS file -->
+<link rel="stylesheet" href="/assets/js/photoswipe/photoswipe.css"> 
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="/assets/js/photoswipe/default-skin/default-skin.css"> 
 </head>
 
 <body id="main">
@@ -23,10 +32,19 @@
         <div class="collapse navbar-collapse" id="collapser">
             <ul class="navbar-nav ml-auto montserrat-bold">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -34,415 +52,210 @@
 
     <!-- Carousel -->
     <section>
-        <div id="slide" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#slide" data-slide-to="0" class="active"></li>
-                <li data-target="#slide" data-slide-to="1"></li>
-                <li data-target="#slide" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-image-1" data-type='background' data-speed="2"></div>
-                    <div class="carousel-caption ">
-                        <div class="title-box">
-                            <h2 class="display-3 text-left montser caption-title n">Experience</h2>
-                            <h2 class="display-3 text-left montser caption-title i">Design</h2>
-                            <h2 class="display-3 text-left montser caption-title n">With Comfort</h2>
-                        </div>
-                        <p class="text-left caption-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsam voluptatibus, deleniti, quae sed voluptates qui accusantium ut quisquam reprehenderit
-                            dolorum dolor? </p>
-                        <a class="btn btn-theme montser_reg" href="#" role="button">View more</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-image-2" data-type='background' data-speed="2"></div>
-                    <div class="carousel-caption ">
-                        <div class="title-box">
-                            <h2 class="display-3 text-left montser caption-title n">Interior</h2>
-                            <h2 class="display-3 text-left montser caption-title i">Design</h2>
-                            <h2 class="display-3 text-left montser caption-title n">Solutions</h2>
-                        </div>
-                        <p class="lead text-left caption-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsam voluptatibus, deleniti, quae sed voluptates qui accusantium ut quisquam reprehenderit
-                            dolorum dolor? </p>
-                        <a class="btn btn-theme montser_reg" href="#" role="button">View more</a>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-image-3" data-type='background' data-speed="2"></div>
-                    <div class="carousel-caption ">
-                        <div class="title-box">
-                            <h2 class="display-3 text-left montser caption-title n">Making</h2>
-                            <h2 class="display-3 text-left montser caption-title i">Households</h2>
-                            <h2 class="display-3 text-left montser caption-title n">Outstanding</h2>
-                        </div>
-                        <p class="lead text-left caption-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsam voluptatibus, deleniti, quae sed voluptates qui accusantium ut quisquam reprehenderit
-                            dolorum dolor? </p>
-                        <a class="btn btn-theme montser_reg" href="#" role="button">View more</a>
-
-                    </div>
-                </div>
+        <div id="slide" class="slide" data-ride="carousel">
+            <div class="carouselimg-20 image-1" data-type='background' data-speed="2">
             </div>
-            <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-
     </section>
 
     <section class="container-fluid">
-        <div class="row d-flex justify-content-center align-items-center text-center">
+        <div class="row d-flex justify-content-start align-items-start pl-5">
             <div class="col-sm-12 py-5">
-                <h5 class="montserrat-light text-secondary">How to </h5>
-                <h2 class="montserrat-bold">Build your base </h2>
-                <hr class="hr">
-            </div>
-
-        </div>
-
-        <div class="row d-flex justify-content-around  picard">
-
-            <div class="col-sm-10 col-md-8 col-lg-4  mb-5">
-                <img src="/assets/images/h3-img-1.jpg" class="card-img"></img>
-                <div class="row montserrat-bold px-4 py-3 d-flex align-items-baseline">
-                    <h3 class=" mr-5 cave_green">01 </h3>
-                    <h4 class="">Places to get lost </h4>
-                </div>
-
-                <p class="text-secondary px-2 osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-
-            </div>
-            <div class="col-sm-10 col-md-8 col-lg-4  mb-5">
-                <img src="/assets/images/h3-img-2.jpg" class="card-img"></img>
-                <div class="row montserrat-bold px-4 py-3 d-flex align-items-baseline">
-                    <h3 class=" mr-5 cave_green">02 </h3>
-                    <h4 class="">Perfect design </h4>
-                </div>
-
-                <p class="text-secondary px-2 osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-            </div>
-            <div class="col-sm-10 col-md-8 col-lg-4 mb-5">
-                <img src="/assets/images/h3-img-3.jpg" class="card-img"></img>
-                <div class="row montserrat-bold px-4 py-3 d-flex align-items-baseline">
-                    <h3 class=" mr-5 cave_green">03 </h3>
-                    <h4 class="">Happy clients </h4>
-                </div>
-
-
-                <p class="text-secondary px-2 osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="container-fluid bg-light animate">
-        <div class="row">
-            <div class="col-sm-6 d-none d-lg-flex ">
-                <img src="./assets/images/h3-phone-fin.png" alt="phone here ">
-            </div>
-            <div class=" col-sm-12 col-lg-6 col-md-12  pl-5 py-5 my-auto">
-                <h4 class="montserrat-light text-muted spaced-text">Application</h4>
-                <h2 class="montserrat-bold"> Use our application </h2>
+                <h5 class="montserrat-light text-secondary">Gallery </h5>
+                <h2 class="montserrat-bold">Item Details </h2>
                 <hr class="hr hr-left">
-                <p class="taller-text osans text-muted"> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex,
-                    nihil
-                    expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri
-                    consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea
-                    facilisis urbanitas moderatius id.</p>
-                <a name="" id="" class="btn btn-theme" href="#" role="button">Download app</a>
             </div>
 
         </div>
 
     </section>
 
-    <section class="container-fluid animate">
-        <div class="row bg-light_but_dark ">
-            <div class="col-sm-3 text-center py-4">
-                <h1 class="montserrat-regular cdes display-4">457</h1>
-                <h6 class="text-muted osans "> Completed Designs</h6>
-            </div>
-            <div class="col-sm-3 text-center py-4">
-                <h1 class="montserrat-regular cdes display-4">1428</h1>
-                <h6 class="text-muted osans "> Completed Designs</h6>
-            </div>
-            <div class="col-sm-3 text-center py-4">
-                <h1 class="montserrat-regular cdes display-4">903</h1>
-                <h6 class="text-muted osans "> Completed Designs</h6>
-            </div>
-            <div class="col-sm-3 text-center py-4">
-                <h1 class="montserrat-regular cdes display-4">769</h1>
-                <h6 class="text-muted osans "> Completed Designs</h6>
-            </div>
-        </div>
-    </section>
-
-    <section class="container-fluid px-3">
+    <section class="container-fluid px-5 mb-5">
         <div class="row">
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-1.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
-                    </div>
+
+            <div class="col-sm-6 details-image ">
+                <a href="javascript:void(0)">
+                    <img src="/assets/images/p-gallery-1.jpg" class="overimage galop" alt="">
                 </a>
             </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-2.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
+            <div class="col-sm-6">
+                <h4 class="montserrat-semibold"> XL beanbag , styrofoam beads  </h4>
+                <h6 class="montserrat-semibold text-muted"> Chairs, Accessories</h6>
+                <p class="osans text-secondary ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eius accusantium facilis minus perferendis quisquam quod fuga tempora inventore iste!</p>
+                <div class="row">
+                    <div class="col-sm-4 similar-image ">
+                        <a href="javascript:void(0)">
+                            <img src="/assets/images/p-gallery-2.jpg" class="overimage galop" alt="">
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-3.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
+                    <div class="col-sm-4 similar-image">
+                        <a href="javascript:void(0)">
+                            <img src="/assets/images/p-gallery-3.jpg" class="overimage galop" alt="">
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-4.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
+                    <div class="col-sm-4 similar-image">
+                        <a href="javascript:void(0)">
+                            <img src="/assets/images/p-gallery-6.jpg" class="overimage galop" alt="">
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-5.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-6.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-1.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-12 p-0 m-0 col-md-6 col-lg-3 hoverlay-image">
-                <a href="">
-                    <img src="/assets/images/p-gallery-2.jpg" class="overimage" alt="">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                        <div class="desc">Furniture / Interior</div>
-                    </div>
-                </a>
+                </div>
+                <div class="row py-5 pl-3">
+                    <a class="btn btn-theme montserrat-semibold align-center text-white " href="javascript:void(0)" role="button">Order Now</a>
+                </div>
             </div>
 
         </div>
-
-    </section>
-
-    <section class="container-fluid bg-light animate">
-        <div class="row">
-            <div class=" col-sm-12 col-lg-6 col-md-12  pl-5 py-5 my-auto">
-                <h6 class="montserrat-light text-uppercase text-muted spaced-text">Application</h6>
-                <h2 class="montserrat-bold"> Our skills </h2>
-                <hr class="hr hr-left">
-                <p class="taller-text text-muted"> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil
-                    expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri
-                    consequat an. Eius lorem tincidunt vix at.</p>
-
-            </div>
-            <div class="col-sm-6 progressbars">
-                <div class="progrext_container">
-                    <div class="row">
-                        <div class="col-sm-12 d-flex align-items-center justify-content-between montserrat-bold">
-                            <h6>Design</h6>
-                            <h6>90%</h6>
-                        </div>
-                    </div>
-                    <div class="progress" style="height: 4px;">
-                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="progrext_container">
-                    <div class="row">
-                        <div class="col-sm-12 d-flex align-items-center justify-content-between montserrat-bold">
-                            <h6>Development</h6>
-                            <h6>68%</h6>
-                        </div>
-                    </div>
-                    <div class="progress" style="height: 4px;">
-                        <div class="progress-bar" role="progressbar" style="width: 68%" aria-valuenow="68"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="progrext_container">
-                    <div class="row">
-                        <div class="col-sm-12 d-flex align-items-center justify-content-between montserrat-bold">
-                            <h6>User experience</h6>
-                            <h6>90%</h6>
-                        </div>
-                    </div>
-                    <div class="progress" style="height: 4px;">
-                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <section class="container-fluid">
-        <div class="row d-flex justify-content-center align-items-center text-center">
-            <div class="col-sm-12 py-5">
-                <h5 class="montserrat-light text-secondary">Journal</h5>
-                <h2 class="montserrat-bold">Read our latest news</h2>
-                <hr class="hr">
-            </div>
-
-        </div>
-
-        <div class="row d-flex justify-content-between picard">
-
-            <div class="col-sm-10 col-md-8 col-lg-4 mb-5">
-                <a href="" class="post-title-link"><img src="/assets/images/h3-img-1.jpg" class="post-img"></img></a>
-                <div class="row montserrat-bold d-flex align-items-baseline post-title">
-                    <a href="" class="post-title-link">
-                        <h5 class="">Make it simple</h5>
-                    </a>
-                </div>
-                <div class="crumbs montserrat-light text-muted spaced-text">
-                    <span class="crumb-author">By Jane Doe </span>
-                    <span class="crumb-type">Competition</span>
-                    <span class="crumb-date">23.06.2021</span>
-                </div>
-
-                <p class="text-secondary osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-
-            </div>
-
-            <div class="col-sm-10 col-md-8 col-lg-4 mb-5">
-                <a href="" class="post-title-link"><img src="/assets/images/h3-img-2.jpg" class="post-img"></img></a>
-                <div class="row montserrat-bold d-flex align-items-baseline post-title">
-                    <a href="" class="post-title-link">
-                        <h5 class="">Trends in UX design</h5>
-                    </a>
-                </div>
-                <div class="crumbs montserrat-light text-muted spaced-text">
-                    <span class="crumb-author">By Jane Doe </span>
-                    <span class="crumb-type">Competition</span>
-                    <span class="crumb-date">23.06.2021</span>
-                </div>
-
-                <p class="text-secondary osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-
-            </div>
-
-            <div class="col-sm-10 col-md-8 col-lg-4 mb-5">
-                <a href="" class="post-title-link"><img src="/assets/images/h3-img-3.jpg" class="post-img"></img></a>
-                <div class="row montserrat-bold d-flex align-items-baseline post-title">
-                    <a href="" class="post-title-link">
-                        <h5 class="">Places to get lost </h5>
-                    </a>
-                </div>
-                <div class="crumbs montserrat-light text-muted spaced-text">
-                    <span class="crumb-author">By Jane Doe </span>
-                    <span class="crumb-type">Competition</span>
-                    <span class="crumb-date">23.06.2021</span>
-                </div>
-
-                <p class="text-secondary osans">
-
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an
-                    pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem
-                    tincidunt vix at
-                </p>
-                <a class="btn btn-theme-bare" href="#" role="button">Read more</a>
-
-            </div>
-        </div>
+        <hr class="hr hr-left">
 
 
     </section>
 
 
 
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div class="copyright">
+        &copy; Comfi 2021 all minamins reserved
+    </div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 
 
 
 
-    <script src="./assets/js/jquery-3.6.0.js"></script>
-    <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/anime-3.2.1/lib/anime.js"></script>
-    <!-- <script src="./assets/js/scrollspy.js"></script> -->
-    <script src="./assets/js/parallax.js"></script>
-    <script src="./assets/js/scripts.js"></script>
-
-    <script>
 
 
-    </script>
+
+
+<script src="./assets/js/jquery-3.6.0.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/anime-3.2.1/lib/anime.js"></script>
+<script src="./assets/js/scripts.js"></script>
+
+<!-- Core JS file -->
+<script src="/assets/js/photoswipe/photoswipe.js"></script> 
+
+<!-- UI JS file -->
+<script src="/assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<script>
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+var items = [
+{
+        src: '/assets/images/p-gallery-1.jpg',
+        w: 1200,
+        h: 900
+    },
+{
+        src: '/assets/images/p-gallery-2.jpg',
+        w: 1200,
+        h: 900
+    },
+    {
+        src: '/assets/images/p-gallery-3.jpg',
+        w: 1200,
+        h: 900
+    },
+    {
+        src: '/assets/images/p-gallery-6.jpg',
+        w: 1200,
+        h: 900
+    }
+];
+
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+
+$('.galop').click(()=> {
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
+})
+
+
+</script>
+
 
 </body>
 
