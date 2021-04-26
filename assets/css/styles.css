@@ -1004,3 +1004,22 @@ a.social-links:hover{
 	background-size: contain;
 	background-position: center;
 }
+.blog-image-link img{
+	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
+}
+.minico{
+	color: rgb(56, 56, 56);
+	padding: 0.2em 0.4em;
+}
+
+.blog-description {
+	font-size: 10pt;
+}
+.cta {
+	font-size: 10pt;
+	padding-bottom: 1.5em;
+}
