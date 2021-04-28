@@ -66,13 +66,10 @@
 	font-family: 'Montserrat_Thin';
 }
 
-
-
 @font-face {
 	font-family: 'Opensans';
 	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
 }
-
 
 .osans {
 	font-family: 'Opensans';
@@ -89,18 +86,16 @@ nav.collapse ul.navbar-nav li {
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 700;
-	
 }
-.navbar-expand-md .navbar-nav .nav-link{
+.navbar-expand-md .navbar-nav .nav-link {
 	padding: 1em 1.04em;
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:hover{
-	color: lightgreen !important	;
-
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: lightgreen !important;
 }
 nav.navbar-dark .navbar-nav li.nav-item:hover {
 	color: cornflowerblue;
-
 }
 nav.navbar.navbar-light {
 	background-color: rgb(255, 255, 255) !important;
@@ -112,11 +107,8 @@ nav.navbar.navbar-dark.fixed-top {
 	transition: all 0.3s ease;
 }
 
-
-
 /* carousel */
 .carousel {
-
 	position: relative;
 	background-color: whitesmoke;
 }
@@ -124,7 +116,6 @@ nav.navbar.navbar-dark.fixed-top {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	
 }
 .carousel-item {
 	position: relative;
@@ -140,33 +131,32 @@ nav.navbar.navbar-dark.fixed-top {
 	backface-visibility: hidden;
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
-
 }
 /* carousel typography  */
-.carousel .carousel-inner .carousel-item h2{
+.carousel .carousel-inner .carousel-item h2 {
 	font-family: 'Montserrat_bold';
 }
-.carousel .carousel-inner .carousel-item p{
+.carousel .carousel-inner .carousel-item p {
 	font-family: 'Opensans';
 	font-size: 1.2em;
 	line-height: 1.4em;
 }
 /* carousel images */
-.carouselimg{
+.carouselimg {
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 	background-size: cover;
 	background-position: center;
 }
-.carouselimg-80{
+.carouselimg-80 {
 	width: 100%;
 	height: 78vh;
 	object-fit: cover;
 	background-size: cover;
 	background-position: center;
 }
-.carouselimg-20{
+.carouselimg-20 {
 	width: 100%;
 	height: 20vh;
 	object-fit: cover;
@@ -348,36 +338,18 @@ nav.navbar.navbar-dark.fixed-top {
 	border-radius: 45px;
 	text-transform: uppercase;
 	transition: all 0.2s ease-in;
-
 }
 .btn-theme:hover {
 	background-color: #212121;
 	color: white;
-
 }
 .btn-theme:focus {
 	box-shadow: none;
 }
 
-
-
-.carousel-item a.btn-theme{
+.carousel-item a.btn-theme {
 	margin-right: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -440,8 +412,6 @@ nav.navbar.navbar-dark.fixed-top {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-
 	.carousel-image {
 		object-fit: cover;
 		height: 100vh;
@@ -497,15 +467,10 @@ nav.navbar.navbar-dark.fixed-top {
 		border: none;
 		color: black;
 	}
-
-
-	
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-
 	.carousel-image {
 		object-fit: cover;
 		height: 100vh;
@@ -561,15 +526,10 @@ nav.navbar.navbar-dark.fixed-top {
 		border: none;
 		color: black;
 	}
-
-
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-
 	.carousel-image {
 		object-fit: cover;
 		height: 100vh;
@@ -625,17 +585,10 @@ nav.navbar.navbar-dark.fixed-top {
 		border: none;
 		color: black;
 	}
-
-
-
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-
-	
 	.carousel-image {
 		object-fit: cover;
 		height: 100vh;
@@ -691,39 +644,35 @@ nav.navbar.navbar-dark.fixed-top {
 		border: none;
 		color: black;
 	}
-
-
-
 }
 
 /* Transitions  */
 
-
-div.carousel-caption a{
+div.carousel-caption a {
 	opacity: 0;
 }
-div.carousel-caption p{
+div.carousel-caption p {
 	display: flex;
 	text-align: left;
 	opacity: 0;
 }
-div.carousel-caption h2.n{
+div.carousel-caption h2.n {
 	display: flex;
 	text-align: left;
 	opacity: 0;
 }
-div.carousel-caption h2.i{
+div.carousel-caption h2.i {
 	display: flex;
 	text-align: left;
 	color: lightgreen;
 	opacity: 0;
 }
-div.title-box{
+div.title-box {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
-.cave_green{
+.cave_green {
 	color: lightgreen;
 }
 .card-img {
@@ -734,10 +683,9 @@ div.title-box{
 	background-position: center;
 	border-radius: 3px;
 }
-.picard{
+.picard {
 	margin: 0 5%;
 }
-
 
 .btn-theme-bare {
 	background-color: #ffffff;
@@ -747,42 +695,39 @@ div.title-box{
 	font-size: 13px;
 	line-height: 1.7em;
 	text-transform: uppercase;
-
-
 }
 .btn-theme-bare:hover {
 	background-color: #ffffff;
 	color: #69c5d3;
-
 }
 .btn-theme-bare:focus {
 	box-shadow: none;
 }
-hr.hr{
+hr.hr {
 	border-color: lightgreen;
 	border-width: 4px;
 	width: 10%;
 }
-hr.hr-left{
+hr.hr-left {
 	margin-right: 100%;
 }
-.spaced-text{
+.spaced-text {
 	letter-spacing: 1.4px;
 }
-.taller-text{
+.taller-text {
 	line-height: 1.7em;
 }
 .animate {
 	transition: all 0.61s ease;
 }
-.bg-light_but_dark{
-	background-color: #efefef ;
+.bg-light_but_dark {
+	background-color: #efefef;
 	padding: 4em 3em;
 }
-.cdes{
+.cdes {
 	font-weight: 400;
 }
-.hoverlay-image img{
+.hoverlay-image img {
 	width: 100%;
 }
 
@@ -797,8 +742,8 @@ hr.hr-left{
 	opacity: 0;
 	transition: .5s ease;
 	background-color: rgba(144, 238, 144, 0.795);
-  }
-  .text {
+}
+.text {
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -807,8 +752,8 @@ hr.hr-left{
 	left: 4rem;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-  }
-  .desc {
+}
+.desc {
 	color: white;
 	font-size: 13px;
 	position: absolute;
@@ -816,26 +761,25 @@ hr.hr-left{
 	left: 4rem;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-  }
-div.hoverlay-image:hover .overlay{
+}
+div.hoverlay-image:hover .overlay {
 	opacity: 1;
 }
 
-div.progrext_container{
-	margin: 1.2rem 1rem ;
+div.progrext_container {
+	margin: 1.2rem 1rem;
 }
 
-div.progrext_container .row{
-
+div.progrext_container .row {
 	font-family: 'Montserrat';
 }
 
-div.progressbars{
+div.progressbars {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
-	padding: 1rem 3rem ;
+	padding: 1rem 3rem;
 }
 div.post-title {
 	margin: 1.2em 0em;
@@ -861,7 +805,6 @@ div.crumbs span.crumb-date {
 a.post-title-link {
 	color: black;
 	transition: all 0.2s ease;
-
 }
 a.post-title-link:hover {
 	color: lightgreen;
@@ -879,15 +822,13 @@ a.post-title-link:hover {
 .post-img:hover {
 	filter: brightness(108%);
 	filter: contrast(108%);
-
-
 }
 .feeter {
 	background-color: #1c1c1c;
 	color: white;
 }
 
-.gmaps img{
+.gmaps img {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -899,11 +840,10 @@ a.post-title-link:hover {
 	background-size: cover;
 	background-position: center;
 	transform: translatey(-30px);
-
 }
 
- /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
- .icon-bar {
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
 	position: fixed;
 	top: 30%;
 	z-index: 420;
@@ -912,83 +852,77 @@ a.post-title-link:hover {
 	transition: all 0.3s ease;
 	transform: translateY(-10%);
 	transform: translateX(-70%);
-
-  }
- .icon-bar:hover{
+}
+.icon-bar:hover {
 	position: fixed;
 	top: 30%;
-
 
 	/* -webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%); */
 
 	transform: translateY(-10%);
 	transform: translateX(0%);
+}
 
-  }
-  
-  /* Style the icon bar links */
-  .icon-bar a {
+/* Style the icon bar links */
+.icon-bar a {
 	display: block;
 	text-align: center;
 	padding: 16px;
 	transition: all 0.3s ease;
 	color: white;
 	font-size: 20px;
-  }
-  
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
 	background-color: #000;
-  }
-  
-  .facebook {
-	background: #3B5998;
+}
+
+.facebook {
+	background: #3b5998;
 	color: white;
-  }
-  
-  .twitter {
-	background: #55ACEE;
+}
+
+.twitter {
+	background: #55acee;
 	color: white;
-  }
-  
-  .google {
+}
+
+.google {
 	background: #dd4b39;
 	color: white;
-  }
-  
-  .linkedin {
+}
+
+.linkedin {
 	background: #007bb5;
 	color: white;
-  }
-  
-  .youtube {
+}
+
+.youtube {
 	background: #bb0000;
 	color: white;
-  } 
-a.social-links{
+}
+a.social-links {
 	color: white;
 	display: flex;
 	align-items: center;
 	padding: 1.1em 0em;
 	transition: color 0.2s ease-in;
-
 }
-a.social-links:hover{
+a.social-links:hover {
 	color: lightgreen;
 	text-decoration: none;
-	
 }
-.copyright{
+.copyright {
 	width: 100%;
-	padding: 1em 4em ;
+	padding: 1em 4em;
 	margin: 0 auto;
 	background-color: black;
 	color: whitesmoke;
 }
 
 .details-image a img {
-
 	overflow: hidden;
 	object-fit: cover;
 	max-height: 80vh;
@@ -997,21 +931,20 @@ a.social-links:hover{
 	background-position: center;
 }
 .similar-image a img {
-
 	overflow: hidden;
 	object-fit: cover;
 	width: 100%;
 	background-size: contain;
 	background-position: center;
 }
-.blog-image-link img{
+.blog-image-link img {
 	overflow: hidden;
 	object-fit: cover;
 	width: 100%;
 	background-size: contain;
 	background-position: center;
 }
-.minico{
+.minico {
 	color: rgb(56, 56, 56);
 	padding: 0.2em 0.4em;
 }
