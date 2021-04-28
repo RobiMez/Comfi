@@ -409,7 +409,6 @@ nav.navbar.navbar-dark.fixed-top {
 		color: black;
 	}
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.carousel-image {
@@ -468,7 +467,6 @@ nav.navbar.navbar-dark.fixed-top {
 		color: black;
 	}
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.carousel-image {
@@ -527,7 +525,6 @@ nav.navbar.navbar-dark.fixed-top {
 		color: black;
 	}
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.carousel-image {
@@ -586,7 +583,6 @@ nav.navbar.navbar-dark.fixed-top {
 		color: black;
 	}
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.carousel-image {
@@ -645,8 +641,6 @@ nav.navbar.navbar-dark.fixed-top {
 		color: black;
 	}
 }
-
-/* Transitions  */
 
 div.carousel-caption a {
 	opacity: 0;
@@ -842,13 +836,11 @@ a.post-title-link:hover {
 	transform: translatey(-30px);
 }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+/* Fixed/sticky icon bar */
 .icon-bar {
 	position: fixed;
 	top: 30%;
 	z-index: 420;
-	/* -webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%); */
 	transition: all 0.3s ease;
 	transform: translateY(-10%);
 	transform: translateX(-70%);
@@ -856,15 +848,10 @@ a.post-title-link:hover {
 .icon-bar:hover {
 	position: fixed;
 	top: 30%;
-
-	/* -webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%); */
-
 	transform: translateY(-10%);
 	transform: translateX(0%);
 }
 
-/* Style the icon bar links */
 .icon-bar a {
 	display: block;
 	text-align: center;
@@ -874,8 +861,7 @@ a.post-title-link:hover {
 	font-size: 20px;
 }
 
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
+\ .icon-bar a:hover {
 	background-color: #000;
 }
 
@@ -965,4 +951,13 @@ img.avatar-img {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
+}
+.prepost-img img{
+	overflow: hidden;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+
+	height: 100%;
+	width: 100%;
 }
