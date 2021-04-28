@@ -1023,3 +1023,13 @@ a.social-links:hover{
 	font-size: 10pt;
 	padding-bottom: 1.5em;
 }
+
+img.avatar-img {
+	overflow: hidden;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
