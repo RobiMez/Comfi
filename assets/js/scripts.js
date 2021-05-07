@@ -55,15 +55,20 @@ $(document).scroll(function() {
 	var y = window.pageYOffset;
 	var wid = window.innerWidth;
 	console.log(wid);
-	if (y > 350 && wid > 830) {
-		$('nav.navbar.fixed-top').removeClass('navbar-dark');
-		$('nav.navbar.fixed-top').addClass('navbar-light');
-	}
-	if (y < 350) {//if its at the start  
-		$('nav.navbar.fixed-top').removeClass('navbar-light');
-		$('nav.navbar.fixed-top').addClass('navbar-dark');
+	// if (y > 350 && wid > 830) {
+	// 	$('nav.navbar.fixed-top.navbar-expand-md').removeClass('navbar-dark');
+	// 	$('nav.navbar.fixed-top').addClass('navbar-light');
+	// 	console.log('triggered nav code ')
+	// }
+	// if (y < 350) {//if its at the start  
+	// 	$('nav.navbar.fixed-top').removeClass('navbar-light');
+	// 	$('nav.navbar.fixed-top').addClass('navbar-dark');
 
-	}
+	// }
+	// if (wid < 830){
+	// 	$('nav.navbar.fixed-top').removeClass('navbar-light');
+	// 	$('nav.navbar.fixed-top').addClass('navbar-dark');
+	// }
 
 
 	if (wid < 630 || y < 350) {//screen is mobile size 
